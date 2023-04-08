@@ -10,11 +10,10 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   &__social-container {
+    @include rul;
     display: flex;
     gap: 34px;
-  }
-  &__item {
-    &:hover {
+    &:nth-child():hover {
       transform: scale(1.1);
     }
   }
