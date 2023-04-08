@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  @include rul;
+  padding: 4px 0 0 110px;
+  gap: 48.67px;
+  font-weight: 500;
+  line-height: 1.18rem;
+  &__link {
+    letter-spacing: -0.001em;
+  }
+  &__social-container {
+    display: flex;
+    gap: 34px;
+  }
+}

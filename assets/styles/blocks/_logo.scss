@@ -1,0 +1,15 @@
+.logo {
+  width: 165px;
+  &__subtitle {
+    font-size: 0.625rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.001em;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8.12px;
+    margin-bottom: 10px;
+  }
+}

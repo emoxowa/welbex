@@ -1,0 +1,15 @@
+.navigation {
+  padding: 4px 0 0;
+  &__list {
+    @include rul;
+    display: flex;
+    gap: 30.5px;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.18rem;
+    letter-spacing: -0.05em;
+  }
+  &__link {
+    letter-spacing: 0.001em;
+  }
+}

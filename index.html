@@ -5,14 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welbex</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div> 
-    <header>
+  <div class="page"> 
+    <header class="wrapper header">
+      <div class="logo header__logo">
+        <a href="#" class="link">
+          <div class="logo__container">
+            <img src="./assets/images/logo-image.svg" alt="логотип">
+            <img src="./assets/images/logo-name.svg" alt="логотип">
+          </div>
+          <p class="logo__subtitle">крупный интегратор CRM в Росcии и ещё 8 странах</p>
+        </a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="" class="navigation__link link">Услуги</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link link">Виджеты</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link link">Интеграции</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link link">Кейсы</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link link">Сертификаты</a></li>
+        </ul>
+      </nav>
+      <ul class="contacts">
+        <li class="contacts__item"><a href="tel:+75555555555" class="contacts__link link">+7 555 555-55-55</a></li>
+        <div class="contacts__social-container">
+          <li class="contacts__item"><a href="https://t.me/emoxowa" target="_blank" class="contacts__link link"><img src="./assets/icons/telegram.svg" alt="telegram"></a></li>
+          <li class="contacts__item"><a href="tel:+75555555555" class="contacts__link link"><img src="./assets/icons/phone.svg" alt="phone"></a></li>
+          <li class="contacts__item"><a href="https://wa.me/79163937711" target="_blank" class="contacts__link link"><img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a></li>
+        </div>
+      </ul>
     </header>
     <main>
+      <section class="wrapper about">
+        <div>
+          <h1 class="about__title">Зарабатывайте больше <span class="about__title_colored">с WELBEX</span></h1>
+          <p class="about__subtitle">Развиваем и контролируем продажи за вас</p>
+        </div>
+        <div class="about__info info">
+          <h2 class="info__title">Вместе с <span class="info__title_colored">бесплатной консультацией</span> мы дарим:</h2>
+          <div class="info__container">
+            <ul class="info__list">
+              <li class="info__item">
+                <h3 class="info__subtitle">Виджеты</h3>
+                <p class="info__description">30 готовых решений</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__subtitle">Dashboard</h3>
+                <p class="info__description">с показателями вашего бизнеса</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__subtitle">Skype Аудит</h3>
+                <p class="info__description">отдела продаж и CRM системы</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__subtitle">35 дней</h3>
+                <p class="info__description">использования CRM</p>
+              </li>
+            </ul>
+          </div>
+          <div class="info__button">
+            <button class="button" type='button'>Получить консультацию</button>
+          </div>     
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
     </footer>
   </div>
 </body>
