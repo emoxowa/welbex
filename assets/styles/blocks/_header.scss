@@ -1,16 +1,21 @@
 .header {
-  margin-right: -3px;
   display: flex;
-  padding: 46px 0 92px;
+  padding: 57px 0 93px;
   gap: 10px;
   justify-content: space-between;
-  &__logo {
-    padding-left: 3px;
+  max-width: 1140px;
+}
+
+@media (max-width: $tablet-portrait)  {
+  .header {
+    padding: 18px 0;
   }
 }
 
 @media (max-width: $phone) {
   .header {
+    padding: 18px 0;
     justify-content: center;
+    margin: 0 1px 0;
   }
 }

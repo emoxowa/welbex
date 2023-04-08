@@ -1,8 +1,8 @@
 .main {
   display: flex;
   justify-content: space-between;
-  margin-right: -5px;
   padding-bottom: 125px;
+  margin-left: -3px;
   &__title{
     font-size: 3rem;
     font-weight: 400;
@@ -24,5 +24,33 @@
     font-size: 1.12rem;
     line-height: 1.37rem;
     letter-spacing: 0.05em;
+  }
+}
+
+ @media (max-width: $tablet-portrait)  {
+  .main {
+    padding: 40px 0;
+    flex-direction: column;
+    gap: 46px;
+    &__subtitle {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .main {
+  margin-left: 0;
+  padding-bottom: 65px;
+  &__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    max-width: 272px;
+    padding-bottom: 15px;
+  }
+  &__subtitle {
+    max-width: 271px;
+    letter-spacing: 0.04em;
+  }
   }
 }

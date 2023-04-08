@@ -1,16 +1,22 @@
 .contacts {
   display: flex;
   @include rul;
-  padding: 6px 0 0 6.8em;
+  padding: 4px 0 0 6.9em;
   gap: 47px;
   font-weight: 500;
   line-height: 1.18rem;
   &__link {
     letter-spacing: -0.001em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   &__social-container {
     display: flex;
     gap: 34px;
+  }
+  &__item {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -29,4 +35,3 @@
     display: none;
   }
 }
-

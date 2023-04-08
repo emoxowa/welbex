@@ -10,4 +10,7 @@
   cursor: pointer;
   border: none;
   letter-spacing: 0.01em;
+  &:hover {
+    background-color: darken($color-button, 10%);
+  }
 }

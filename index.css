@@ -1,8 +1,9 @@
+@charset "UTF-8";
 * {
   font-family: "Inter", sans-serif;
   color: #E4E5EA;
   letter-spacing: 0.06em;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
   margin: 0;
 }
 
@@ -29,6 +30,11 @@ body {
   padding: 0 30px;
 }
 
+@media (max-width: 768px) {
+  .page {
+    padding: 0 15px;
+  }
+}
 h4 {
   font-family: "Inter";
   font-style: normal;
@@ -40,13 +46,24 @@ h4 {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 768px) {
+  h4 {
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+    letter-spacing: 0.05em;
+  }
+}
 .link {
   text-decoration: none;
   color: inherit;
+  transition: color 0.5s linear;
 }
 .link:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 .list {
@@ -60,8 +77,62 @@ h4 {
   line-height: 1.18rem;
 }
 
+@media (max-width: 768px) {
+  .list {
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+  }
+}
+.social {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.telegram {
+  background-image: url(./assets/icons/telegram.svg);
+  width: 17px;
+  height: 14px;
+}
+.telegram:hover {
+  background-image: url(./assets/icons/telegram-colored.svg);
+}
+
+.whatsapp {
+  background-image: url(./assets/icons/whatsapp.svg);
+  width: 16px;
+  height: 16px;
+}
+.whatsapp:hover {
+  background-image: url(./assets/icons/whatsapp-colored.svg);
+}
+
+.phone {
+  background-image: url(./assets/icons/phone.svg);
+  width: 16px;
+  height: 16px;
+}
+.phone:hover {
+  background-image: url(./assets/icons/phone-colored.svg);
+}
+
+@media (max-width: 768px) {
+  .telegram_big {
+    width: 20px;
+    height: 16.79px;
+  }
+  .phone_big {
+    width: 20px;
+    height: 19px;
+  }
+  .whatsapp_big {
+    width: 19.2px;
+    height: 19.2px;
+  }
+}
 .logo {
-  padding: 3px 0 0;
+  padding: 0;
   width: 165px;
 }
 .logo__subtitle {
@@ -83,23 +154,27 @@ h4 {
   }
 }
 .header {
-  margin-right: -3px;
   display: flex;
-  padding: 46px 0 92px;
+  padding: 57px 0 93px;
   gap: 10px;
   justify-content: space-between;
-}
-.header__logo {
-  padding-left: 3px;
+  max-width: 1140px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 18px 0;
+  }
+}
 @media (max-width: 480px) {
   .header {
+    padding: 18px 0;
     justify-content: center;
+    margin: 0 1px 0;
   }
 }
 .navigation {
-  padding: 6px 0 0;
+  padding: 4px 0 0;
 }
 .navigation__list {
   margin: 0;
@@ -117,6 +192,9 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  .navigation {
+    padding: 0;
+  }
   .navigation__item:last-child {
     display: none;
   }
@@ -127,6 +205,7 @@ h4 {
     text-transform: uppercase;
     font-size: 0.75rem;
     line-height: 0.93rem;
+    letter-spacing: 0.01em;
   }
 }
 .contacts {
@@ -134,17 +213,21 @@ h4 {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding: 6px 0 0 6.8em;
+  padding: 4px 0 0 6.9em;
   gap: 47px;
   font-weight: 500;
   line-height: 1.18rem;
 }
 .contacts__link {
   letter-spacing: -0.001em;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .contacts__social-container {
   display: flex;
   gap: 34px;
+}
+.contacts__item:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: calc(1024px + 1px)) and (max-width: 1200px) {
@@ -164,8 +247,8 @@ h4 {
 .main {
   display: flex;
   justify-content: space-between;
-  margin-right: -5px;
   padding-bottom: 125px;
+  margin-left: -3px;
 }
 .main__title {
   font-size: 3rem;
@@ -191,6 +274,32 @@ h4 {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding: 40px 0;
+    flex-direction: column;
+    gap: 46px;
+  }
+  .main__subtitle {
+    max-width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    margin-left: 0;
+    padding-bottom: 65px;
+  }
+  .main__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    max-width: 272px;
+    padding-bottom: 15px;
+  }
+  .main__subtitle {
+    max-width: 271px;
+    letter-spacing: 0.04em;
+  }
+}
 .info {
   max-width: 330px;
 }
@@ -244,7 +353,90 @@ h4 {
 .info__button {
   text-align: right;
 }
+.info__list-short {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  .info {
+    margin: 0 auto 0 0;
+    max-width: 100%;
+  }
+  .info__title {
+    padding: 0;
+    max-width: 350px;
+    text-align: left;
+    letter-spacing: 0.001em;
+  }
+  .info__list {
+    justify-content: left;
+    grid-template-columns: repeat(2, 200px);
+  }
+  .info__subtitle {
+    text-align: left;
+  }
+  .info__description {
+    text-align: left;
+  }
+  .info__item {
+    width: 200px;
+  }
+  .info__button {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .info__title {
+    max-width: 272px;
+    font-size: 1.12rem;
+    line-height: 1.37rem;
+  }
+  .info__title_colored {
+    text-transform: lowercase;
+    font-weight: 500;
+    background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    letter-spacing: 0.02em;
+  }
+  .info__list {
+    display: none;
+  }
+  .info__button {
+    display: none;
+  }
+  .info__list-short {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 19px;
+    margin-left: 1px;
+    gap: 14px 5px;
+  }
+  .info__item-short {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .info__line {
+    width: 10px;
+    height: 1px;
+    background: linear-gradient(45deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
+  }
+  .info__text {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.81rem;
+    line-height: 1rem;
+    letter-spacing: 0.06em;
+    padding: 0;
+  }
+}
 .button {
   font-style: normal;
   font-weight: 500;
@@ -258,10 +450,12 @@ h4 {
   border: none;
   letter-spacing: 0.01em;
 }
+.button:hover {
+  background-color: #1055f0;
+}
 
 .footer {
-  padding-left: 3px;
-  margin-right: -2px;
+  margin-left: -1px;
 }
 .footer__info {
   display: flex;
@@ -279,7 +473,7 @@ h4 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.93rem;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.003em;
 }
 .footer__privacy-policy {
   font-family: "Montserrat", sans-serif;
@@ -287,9 +481,29 @@ h4 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.93rem;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.003em;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin: 0;
+    padding-top: 36px;
+  }
+  .footer__info {
+    flex-direction: column;
+    gap: 21px;
+  }
+  .footer__legal {
+    text-align: left;
+    padding: 50px 0 60px;
+  }
+  .footer__copyright {
+    letter-spacing: 0.001em;
+  }
+  .footer__privacy-policy {
+    letter-spacing: 0.001em;
+  }
+}
 .about__title {
   margin-bottom: 20px;
 }
@@ -317,6 +531,34 @@ h4 {
   letter-spacing: -0.005em;
 }
 
+@media (max-width: 480px) {
+  .menu__list {
+    grid-template-columns: 100px auto;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+  .item-1 {
+    order: 1;
+  }
+  .item-2, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10 {
+    order: 4;
+  }
+  .item-3 {
+    order: 3;
+  }
+  .item-4 {
+    order: 2;
+    position: relative;
+    visibility: hidden;
+  }
+  .item-4::before {
+    content: "Благодарность клиентов";
+    top: 0;
+    left: 0;
+    visibility: visible;
+    position: absolute;
+  }
+}
 .contact {
   padding-left: 4em;
   text-align: right;
@@ -331,8 +573,28 @@ h4 {
   display: flex;
   justify-content: flex-end;
   gap: 14px;
-  padding: 22px 0 18px;
+  padding: 22px 0 21px;
 }
 .contact__link {
   letter-spacing: 0.0001em;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    text-align: left;
+    padding-left: 0;
+  }
+  .contact__title {
+    margin-bottom: 20px;
+  }
+  .contact__social-container {
+    margin-left: 2px;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 11px 0 12px;
+  }
+  .contact__link-tel {
+    letter-spacing: 0.005em;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

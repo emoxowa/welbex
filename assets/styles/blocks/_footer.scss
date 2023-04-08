@@ -1,6 +1,5 @@
 .footer {
-  padding-left: 3px;
-  margin-right: -2px;
+  margin-left: -1px;
   &__info {
     display: flex;
     justify-content: space-between;
@@ -17,7 +16,7 @@
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 0.93rem;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.003em;
   }
   &__privacy-policy {
     font-family: 'Montserrat', sans-serif;
@@ -25,6 +24,27 @@
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 0.93rem;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.003em;
+  }
+}
+
+@media (max-width: $tablet-portrait) {
+  .footer {
+    margin: 0;
+    padding-top: 36px;
+    &__info {
+      flex-direction: column;
+      gap: 21px;
+    }
+    &__legal {
+      text-align: left;
+      padding: 50px 0 60px;
+    }
+    &__copyright {
+      letter-spacing: 0.001em;
+    }
+    &__privacy-policy {
+      letter-spacing: 0.001em;
+    }
   }
 }

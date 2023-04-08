@@ -1,0 +1,50 @@
+.social {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.telegram {
+  background-image: url(./assets/icons/telegram.svg);
+  width: 17px;
+  height: 14px;
+  &:hover {
+    background-image: url(./assets/icons/telegram-colored.svg);
+  }
+}
+
+.whatsapp {
+  background-image: url(./assets/icons/whatsapp.svg);
+  width: 16px;
+  height: 16px;
+  &:hover {
+  background-image: url(./assets/icons/whatsapp-colored.svg);
+}
+}
+
+.phone {
+  background-image: url(./assets/icons/phone.svg);
+  width: 16px;
+  height: 16px;
+  &:hover {
+  background-image: url(./assets/icons/phone-colored.svg);
+}
+}
+
+@media (max-width: $tablet-portrait) {
+  .telegram_big {
+    width: 20px;
+    height: 16.79px;
+  }
+
+  .phone_big {
+    width: 20px;
+    height: 19px;
+  }
+
+  .whatsapp_big {
+    width: 19.2px;
+    height: 19.2px;
+  }
+}

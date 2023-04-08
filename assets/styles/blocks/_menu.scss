@@ -15,3 +15,33 @@
     letter-spacing: -0.005em;
   }
 }
+
+@media (max-width: $phone) {
+  .menu {
+    &__list {
+      grid-template-columns: 100px auto;
+      column-gap: 48px;
+    }
+  }
+  .item-1 {
+    order: 1;
+  }
+  .item-2, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10 {
+    order: 4;
+  }  .item-3 {
+    order: 3;
+  }
+  .item-4 {
+    order: 2;
+    position: relative;
+    visibility: hidden;
+    &::before {
+      content: "Благодарность клиентов";
+      top: 0;
+      left: 0;
+      visibility: visible;
+      position: absolute;
+    }
+  }
+}
+
