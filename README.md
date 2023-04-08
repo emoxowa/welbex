@@ -28,4 +28,6 @@ git clone https://github.com/emoxowa/welbex.git
 2. Navigate to the project folder: welbex.
 3. Open the `index.html` file in your preferred web browser to view the website.
 
+<img width="862" alt="image" src="https://user-images.githubusercontent.com/100534408/230722783-a1a3910b-9e4b-42aa-8f74-156550bd0c60.png">
+
 
