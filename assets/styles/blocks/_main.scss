@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 125px;
-  margin-left: -3px;
   &__title{
+    margin-left: -3px;
     font-size: 3rem;
     font-weight: 400;
     line-height: 3.62rem;
@@ -19,6 +19,7 @@
     }
   }
   &__subtitle {
+    margin-left: -3px;
     padding: 0;
     max-width: 275px;
     font-size: 1.12rem;
@@ -29,7 +30,8 @@
 
  @media (max-width: $tablet-portrait)  {
   .main {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     flex-direction: column;
     gap: 46px;
     &__subtitle {

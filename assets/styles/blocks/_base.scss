@@ -3,14 +3,12 @@
   color: $color-primary-text;
   letter-spacing: 0.06em;
   transition: all 0.4s linear;
-  // border: 1px solid red;
   margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
   min-width: 320px;
-  background-color: $color-primary-bg;
 }
 
 :root { 
@@ -20,10 +18,3 @@ html {
 *, ::before, ::after {
   box-sizing: inherit;
 }
-
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-//font-family: 'Montserrat', sans-serif;

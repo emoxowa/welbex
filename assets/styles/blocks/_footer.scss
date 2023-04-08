@@ -1,6 +1,6 @@
 .footer {
-  margin-left: -1px;
   &__info {
+    margin-left: -1px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -46,5 +46,11 @@
     &__privacy-policy {
       letter-spacing: 0.001em;
     }
+  }
+}
+
+@media (max-width: $phone) {
+  .footer {
+    background-color: #0E1014;
   }
 }

@@ -13,7 +13,7 @@
     @include rul;
     display: flex;
     gap: 34px;
-    &:nth-child():hover {
+    &:nth-child(3):hover {
       transform: scale(1.1);
     }
   }
