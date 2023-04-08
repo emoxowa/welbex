@@ -29,6 +29,17 @@ body {
   padding: 0 30px;
 }
 
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.06rem;
+  text-transform: uppercase;
+  color: #656566;
+  letter-spacing: 0.05em;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -36,6 +47,17 @@ body {
 .link:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.18rem;
 }
 
 .logo {
@@ -100,12 +122,13 @@ body {
   gap: 34px;
 }
 
-.about {
+.main {
   display: flex;
   justify-content: space-between;
   margin-right: -5px;
+  padding-bottom: 125px;
 }
-.about__title {
+.main__title {
   font-size: 3rem;
   font-weight: 400;
   line-height: 3.62rem;
@@ -113,7 +136,7 @@ body {
   padding-bottom: 30px;
   letter-spacing: 0.001em;
 }
-.about__title_colored {
+.main__title_colored {
   font-weight: 900;
   background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
   -webkit-background-clip: text;
@@ -121,7 +144,7 @@ body {
   color: transparent;
   letter-spacing: 0.001em;
 }
-.about__subtitle {
+.main__subtitle {
   padding: 0;
   max-width: 275px;
   font-size: 1.12rem;
@@ -195,4 +218,82 @@ body {
   cursor: pointer;
   border: none;
   letter-spacing: 0.01em;
+}
+
+.footer {
+  padding-left: 3px;
+  margin-right: -2px;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__legal {
+  text-align: right;
+  padding: 24px 0 20px;
+}
+.footer__copyright {
+  padding-bottom: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  letter-spacing: -0.005em;
+}
+.footer__privacy-policy {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  letter-spacing: -0.005em;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+.about__item {
+  margin-bottom: 10px;
+}
+.about__link {
+  letter-spacing: -0.005em;
+}
+
+.menu__title {
+  margin-bottom: 20px;
+}
+.menu__list {
+  display: grid;
+  grid-template-columns: 144px auto;
+  -moz-column-gap: 52px;
+       column-gap: 52px;
+  letter-spacing: -0.05em;
+}
+.menu__item {
+  margin-bottom: 10px;
+}
+.menu__link {
+  letter-spacing: -0.005em;
+}
+
+.contact {
+  padding-left: 4em;
+  text-align: right;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+.contact__item {
+  letter-spacing: -0.05em;
+}
+.contact__social-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  padding: 22px 0 19px;
+}
+.contact__link {
+  letter-spacing: 0.0001em;
 }/*# sourceMappingURL=index.css.map */

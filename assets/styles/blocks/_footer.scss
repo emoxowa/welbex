@@ -1,0 +1,30 @@
+.footer {
+  padding-left: 3px;
+  margin-right: -2px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__legal {
+    text-align: right;
+    padding: 24px 0 20px;
+  }
+  &__copyright {
+    padding-bottom: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+    letter-spacing: -0.005em;
+  }
+  &__privacy-policy {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+    letter-spacing: -0.005em;
+  }
+}

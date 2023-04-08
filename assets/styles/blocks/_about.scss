@@ -1,27 +1,11 @@
 .about {
-  display: flex;
-  justify-content: space-between;
-  margin-right: -5px;
-  &__title{
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 3.62rem;
-    max-width: 362px;
-    padding-bottom: 30px;
-    letter-spacing: 0.001em;
-    &_colored {
-      font-weight: 900;
-      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
-      background-clip: text;
-      color: transparent;
-      letter-spacing: 0.001em;
-    }
+  &__title {
+    margin-bottom: 20px;
   }
-  &__subtitle {
-    padding: 0;
-    max-width: 275px;
-    font-size: 1.12rem;
-    line-height: 1.37rem;
-    letter-spacing: 0.05em;
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__link {
+    letter-spacing: -0.005em;
   }
 }

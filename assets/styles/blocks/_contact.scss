@@ -1,0 +1,19 @@
+.contact {
+  padding-left: 4em;
+  text-align: right;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__item {
+    letter-spacing: -0.05em;
+  }
+  &__social-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    padding: 22px 0 19px;
+  }
+  &__link {
+    letter-spacing: 0.0001em;
+  }
+}
