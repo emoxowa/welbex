@@ -1,3 +1,9 @@
 .wrapper {
   padding: 0 30px;
 }
+
+@media (max-width: $tablet-portrait) { 
+  .wrapper {
+    padding: 0 15px;
+  }
+}

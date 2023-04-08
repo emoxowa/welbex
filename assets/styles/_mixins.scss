@@ -3,3 +3,35 @@
 	padding: 0;
 	list-style: none;
 }
+
+@mixin device($breakpoint) {
+  @if $breakpoint == 'small-phone' {
+    @media screen and (max-width: $small-phone) {
+      @content;
+    }
+  } @else if $breakpoint == 'phone' {
+    @media screen and (min-width: calc(#{$small-phone} + 1px)) and (max-width: $phone) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media screen and (min-width: calc(#{$phone} + 1px)) and (max-width: $tablet) {
+      @content;
+    }
+  } @if $breakpoint == 'tablet-max' {
+    @media screen and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $breakpoint == 'mobile-between' {
+    @media screen and (min-width: calc(#{$phone} + 1px)) and (max-width: $tablet-portrait) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet-landscape' {
+    @media screen and (min-width: calc(#{$tablet-portrait} + 1px)) and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg-screen' {
+    @media screen and (min-width: calc(#{$tablet} + 1px)) and (max-width: $desktop-lg) {
+      @content;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .navigation {
-  padding: 4px 0 0;
+  padding: 6px 0 0;
   &__list {
     @include rul;
     display: flex;
@@ -11,5 +11,21 @@
   }
   &__link {
     letter-spacing: 0.001em;
+  }
+}
+
+@media (max-width: $tablet-portrait) {
+  .navigation { 
+    &__item:last-child {
+      display: none;
+    }
+    &__list {
+      gap: 16px;
+    }
+    &__link {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      line-height: 0.93rem;
+    }
   }
 }

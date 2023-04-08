@@ -1,9 +1,16 @@
 .header {
+  margin-right: -3px;
   display: flex;
-  padding: 46px 0 94px;
-  gap: 27px;
+  padding: 46px 0 92px;
+  gap: 10px;
   justify-content: space-between;
   &__logo {
     padding-left: 3px;
+  }
+}
+
+@media (max-width: $phone) {
+  .header {
+    justify-content: center;
   }
 }

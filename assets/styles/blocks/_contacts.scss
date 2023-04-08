@@ -1,8 +1,8 @@
 .contacts {
   display: flex;
   @include rul;
-  padding: 4px 0 0 110px;
-  gap: 48.67px;
+  padding: 6px 0 0 6.8em;
+  gap: 47px;
   font-weight: 500;
   line-height: 1.18rem;
   &__link {
@@ -13,3 +13,20 @@
     gap: 34px;
   }
 }
+
+ @include device('lg-screen')  {
+  .contacts {
+    flex-direction: column;
+    gap: 15px;
+    &__social-container {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .contacts {
+    display: none;
+  }
+}
+
