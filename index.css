@@ -195,8 +195,8 @@ h4 {
   height: 24px;
 }
 .logo__name {
-  width: 95.87px;
-  height: 14.14px;
+  width: 96px;
+  height: 15px;
 }
 .logo__subtitle {
   font-size: 0.625rem;
@@ -207,8 +207,8 @@ h4 {
 .logo__container {
   display: flex;
   align-items: center;
-  gap: 8.12px;
-  margin-bottom: 9px;
+  gap: 7px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 480px) {
@@ -358,12 +358,14 @@ h4 {
     padding-bottom: 65px;
   }
   .main__title {
+    margin-left: 0;
     font-size: 2.25rem;
     line-height: 2.75rem;
     max-width: 272px;
     padding-bottom: 15px;
   }
   .main__subtitle {
+    margin-left: 0;
     max-width: 271px;
     letter-spacing: 0.04em;
   }
@@ -516,7 +518,7 @@ h4 {
   padding: 21px 34px 21px 35px;
   cursor: pointer;
   border: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.001em;
 }
 .button:hover {
   background-color: #1055f0;
