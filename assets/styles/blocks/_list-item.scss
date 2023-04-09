@@ -1,4 +1,4 @@
-.list {
+.list-item {
   @include rul;
   font-family: 'Inter';
   font-style: normal;
@@ -9,7 +9,7 @@
 
 
 @media (max-width: $tablet-portrait) {
-  .list  {
+  .list-item  {
     font-size: 0.875rem;
     line-height: 1.06rem;
   }

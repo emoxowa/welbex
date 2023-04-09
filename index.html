@@ -13,12 +13,9 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <title>Welbex</title>
-  <link rel="shortcut icon" href="./assets/images/logo-favicon.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -27,8 +24,8 @@
       <div class="logo header__logo">
         <a href="#" class="link">
           <div class="logo__container">
-            <img src="./assets/images/logo-image.svg" alt="логотип">
-            <img src="./assets/images/logo-name.svg" alt="логотип">
+            <img  class="logo__image" src="./assets/images/logo-image.svg" alt="логотип">
+            <img  class="logo__name" src="./assets/images/logo-name.svg" alt="логотип">
           </div>
           <p class="logo__subtitle">крупный интегратор CRM в Росcии и ещё 8 странах</p>
         </a>
@@ -43,65 +40,67 @@
         </ul>
       </nav>
       <ul class="contacts">
-        <li class="contacts__item"><a href="tel:+75555555555" class="contacts__link link">+7 555 555-55-55</a></li>
+        <li class="contacts__item"><a href="tel:+75555555555" aria-label="Позвонить по номеру +7 555 555 55 55" class="contacts__link link">+7 555 555-55-55</a></li>
         <li>
           <ul class="contacts__social-container">
-            <li class="contacts__item"><a href="https://t.me/emoxowa" target="_blank" class="contacts__link link"><div class="social telegram"></div></a></li>
-            <li class="contacts__item"><a href="tel:+75555555555" class="contacts__link link"><div class="social phone"></div></a></li>
-            <li class="contacts__item"><a href="https://wa.me/79163937711" target="_blank" class="contacts__link link"><div class="social whatsapp"></div></a></li>
+            <li class="contacts__item"><a href="https://t.me/emoxowa" aria-label="Перейти на наш канал в Telegram" target="_blank" class="contacts__link link"><div class="social telegram"></div></a></li>
+            <li class="contacts__item"><a href="tel:+75555555555" aria-label="Позвонить по номеру +7 555 555 55 55" class="contacts__link link"><div class="social phone"></div></a></li>
+            <li class="contacts__item"><a href="https://wa.me/79163937711" aria-label="Отправить сообщение в WhatsApp" target="_blank" class="contacts__link link"><div class="social whatsapp"></div></a></li>
           </ul>
         </li>
       </ul>
     </header>
     <main>
-      <section class="wrapper main">
-        <div>
-          <h1 class="main__title">Зарабатывайте больше <span class="main__title_colored">с WELBEX</span></h1>
-          <p class="main__subtitle">Развиваем и контролируем продажи за вас</p>
-        </div>
-        <div class="main__info info">
-          <h2 class="info__title">Вместе с <span class="info__title_colored">бесплатной консультацией</span> мы дарим:</h2>
-          <div class="info__container">
-            <ul class="info__list">
-              <li class="info__item">
-                <h3 class="info__subtitle">Виджеты</h3>
-                <p class="info__description">30 готовых решений</p>
-              </li>
-              <li class="info__item">
-                <h3 class="info__subtitle">Dashboard</h3>
-                <p class="info__description">с показателями вашего бизнеса</p>
-              </li>
-              <li class="info__item">
-                <h3 class="info__subtitle">Skype Аудит</h3>
-                <p class="info__description">отдела продаж и CRM системы</p>
-              </li>
-              <li class="info__item">
-                <h3 class="info__subtitle">35 дней</h3>
-                <p class="info__description">использования CRM</p>
-              </li>
-            </ul>
-            <ul class="info__list-short">
-              <li class="info__item-short">
-                <div class="info__line"></div>
-                <p class="info__text">Skype аудит</p>
-              </li>
-              <li class="info__item-short">
-                <div class="info__line"></div>
-                <p class="info__text">30 виджетов</p>
-              </li>
-              <li class="info__item-short">
-                <div class="info__line"></div>
-                <p class="info__text">Dashboard</p>
-              </li>
-              <li class="info__item-short">
-                <div class="info__line"></div>
-                <p class="info__text">Месяц аmoCRM</p>
-              </li>
-            </ul>
+      <section class="wrapper">
+        <div class="main">
+          <div>
+            <h1 class="main__title">Зарабатывайте больше <span class="main__title-highlight">с WELBEX</span></h1>
+            <p class="main__subtitle">Развиваем и контролируем продажи за вас</p>
           </div>
-          <div class="info__button">
-            <button class="button" type='button'>Получить консультацию</button>
-          </div>     
+          <div class="main__info info">
+            <h2 class="info__title">Вместе с <span class="info__title-highlight">бесплатной консультацией</span> мы дарим:</h2>
+            <div class="info__container">
+              <ul class="info__list">
+                <li class="info__item">
+                  <h3 class="info__subtitle">Виджеты</h3>
+                  <p class="info__description">30 готовых решений</p>
+                </li>
+                <li class="info__item">
+                  <h3 class="info__subtitle">Dashboard</h3>
+                  <p class="info__description">с показателями вашего бизнеса</p>
+                </li>
+                <li class="info__item">
+                  <h3 class="info__subtitle">Skype Аудит</h3>
+                  <p class="info__description">отдела продаж и CRM системы</p>
+                </li>
+                <li class="info__item">
+                  <h3 class="info__subtitle">35 дней</h3>
+                  <p class="info__description">использования CRM</p>
+                </li>
+              </ul>
+              <ul class="info__list-short">
+                <li class="info__item-short">
+                  <div class="info__line"></div>
+                  <p class="info__text">Skype аудит</p>
+                </li>
+                <li class="info__item-short">
+                  <div class="info__line"></div>
+                  <p class="info__text">30 виджетов</p>
+                </li>
+                <li class="info__item-short">
+                  <div class="info__line"></div>
+                  <p class="info__text">Dashboard</p>
+                </li>
+                <li class="info__item-short">
+                  <div class="info__line"></div>
+                  <p class="info__text">Месяц аmoCRM</p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__button">
+              <button class="button" type='button'>Получить консультацию</button>
+            </div>     
+          </div>
         </div>
       </section>
     </main>
@@ -109,14 +108,14 @@
       <div class="footer__info">
         <div class="about">
           <h4 class="about__title title">О компании</h4>
-          <ul class="about__list list">
+          <ul class="about__list list-item">
             <li class="about__item"><a href="#" class="about__link link">Партнёрская программа</a></li>
             <li class="about__item"><a href="#" class="about__link link">Вакансии</a></li>
           </ul>
         </div>
         <div class="menu">
           <h4 class="menu__title title">Меню</h4>
-          <ul class="menu__list list">
+          <ul class="menu__list list-item">
             <li class="menu__item item-1"><a href="#" class="menu__link link">Расчёт стоимости</a></li>
             <li class="menu__item item-2"><a href="#" class="menu__link link">Кейсы</a></li>
             <li class="menu__item item-3"><a href="#" class="menu__link link">Услуги</a></li>
@@ -131,13 +130,13 @@
         </div>
         <div class="contact">
           <h4 class="contact__title title">Контакты</h4>
-          <ul class="contact__list list">
-            <li class="contact__item"><a href="tel:+75555555555" class="contact__link contact__link-tel link">+7 555 555-55-55</a></li>
+          <ul class="contact__list list-item">
+            <li class="contact__item"><a href="tel:+75555555555" aria-label="Позвонить по номеру +7 555 555 55 55" class="contact__link contact__link-tel link">+7 555 555-55-55</a></li>
             <li class="contact__item">
               <ul class="contact__social-container list">
-                <li class="contact__item"><a href="https://t.me/emoxowa" target="_blank" class="contact__link link"><div class="social telegram telegram_big"></div></a></li>
-                <li class="contact__item"><a href="tel:+75555555555" class="contact__link link"><div class="social phone phone_big"></div></a></li>
-                <li class="contact__item"><a href="https://wa.me/79163937711" target="_blank" class="contact__link link"><div class="social whatsapp whatsapp_big"></div></a></li>
+                <li><a href="https://t.me/emoxowa" aria-label="Перейти на наш канал в Telegram" target="_blank" class="contact__link link"><div class="social telegram telegram_big"></div></a></li>
+                <li><a href="tel:+75555555555" aria-label="Позвонить по номеру +7 555 555 55 55" class="contact__link link"><div class="social phone phone_big"></div></a></li>
+                <li><a href="https://wa.me/79163937711" aria-label="Отправить сообщение в WhatsApp" target="_blank" class="contact__link link"><div class="social whatsapp whatsapp_big"></div></a></li>
               </ul>
             </li>
             <li class="contact__item"><a href="https://www.google.ru/maps/place/%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B9+%D0%BF%D1%80-%D0%B4,+3%D0%A11,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+127410/@55.873427,37.5727496,17z/data=!3m1!4b1!4m6!3m5!1s0x46b5370d42c055a3:0xfe62d1376599cb4c!8m2!3d55.873427!4d37.5753299!16s%2Fg%2F11j9m76z8b" target="_blank" class="contact__link link">Москва, Путевой проезд 3с1, к 902</a></li>
@@ -145,7 +144,7 @@
         </div>
       </div>
       <div class="footer__legal">
-        <p class="footer__copyright">&copy;WELBEX <span id="currentYear" class="footer__copyright"></span>. Все права защищены.</p>
+        <p class="footer__copyright">&copy;WELBEX <span id="currentYear" class="footer__copyright-year"></span>. Все права защищены.</p>
         <a class="footer__privacy-policy" href="" target="_blank">Политика конфиденциальности</a>
       </div>
     </footer>

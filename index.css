@@ -78,7 +78,7 @@ h4 {
   color: transparent;
 }
 
-.list {
+.list-item {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -90,7 +90,7 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  .list {
+  .list-item {
     font-size: 0.875rem;
     line-height: 1.06rem;
   }
@@ -146,6 +146,14 @@ h4 {
 .logo {
   padding: 0;
   width: 165px;
+}
+.logo__image {
+  width: 35.05px;
+  height: 24px;
+}
+.logo__name {
+  width: 95.87px;
+  height: 14.14px;
 }
 .logo__subtitle {
   font-size: 0.625rem;
@@ -273,7 +281,7 @@ h4 {
   padding-bottom: 30px;
   letter-spacing: 0.001em;
 }
-.main__title_colored {
+.main__title-highlight {
   font-weight: 900;
   background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
   -webkit-background-clip: text;
@@ -328,7 +336,7 @@ h4 {
   letter-spacing: 0.01em;
   padding-top: 17px;
 }
-.info__title_colored {
+.info__title-highlight {
   text-transform: uppercase;
   font-weight: 500;
   background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
@@ -408,7 +416,7 @@ h4 {
     font-size: 1.12rem;
     line-height: 1.37rem;
   }
-  .info__title_colored {
+  .info__title-highlight {
     text-transform: lowercase;
     font-weight: 500;
     background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
@@ -490,6 +498,15 @@ h4 {
   line-height: 0.93rem;
   letter-spacing: -0.003em;
 }
+.footer__copyright-year {
+  padding-bottom: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  letter-spacing: -0.003em;
+}
 .footer__privacy-policy {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -513,6 +530,9 @@ h4 {
     padding: 50px 0 60px;
   }
   .footer__copyright {
+    letter-spacing: 0.001em;
+  }
+  .footer__copyright-year {
     letter-spacing: 0.001em;
   }
   .footer__privacy-policy {

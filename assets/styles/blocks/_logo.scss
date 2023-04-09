@@ -1,6 +1,14 @@
 .logo {
   padding: 0;
   width: 165px;
+  &__image {
+    width: 35.05px;
+    height: 24px;
+  }
+  &__name {
+    width: 95.87px;
+    height: 14.14px;
+  }
   &__subtitle {
     font-size: 0.625rem;
     font-family: 'Montserrat', sans-serif;

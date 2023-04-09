@@ -7,14 +7,14 @@
     font-weight: 500;
     letter-spacing: 0.01em;
     padding-top: 17px;
-    &_colored {
-      text-transform: uppercase;
-      font-weight: 500;
-      background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
-      background-clip: text;
-      color: transparent;
-      letter-spacing: 0.07em;
-    }
+  }
+  &__title-highlight {
+    text-transform: uppercase;
+    font-weight: 500;
+    background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.07em;
   }
   &__list {
     @include rul;
@@ -87,14 +87,14 @@
       max-width: 272px;
       font-size: 1.12rem;
       line-height: 1.37rem;
-      &_colored {
-        text-transform: lowercase;
-        font-weight: 500;
-        background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
-        background-clip: text;
-        color: transparent;
-        letter-spacing: 0.02em;
-      }
+    }
+    &__title-highlight {
+      text-transform: lowercase;
+      font-weight: 500;
+      background: linear-gradient(213deg, #FCB045 26%, #FD1D1D 71%), #E4E5EA;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 0.02em;
     }
     &__list {
       display: none;
