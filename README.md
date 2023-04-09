@@ -30,7 +30,7 @@ git clone https://github.com/emoxowa/welbex.git
 
 ## Website Optimization and Validation
 
-This section of the README file is dedicated to the process of optimizing and validating your website for various performance and coding standards. Here, you can find information about the results and improvements made after testing the website with Google PageSpeed Insights, HTML Validator, CSS Validator, and BEM Validator.
+This section of the README file is dedicated to the process of optimizing and validating website for various performance and coding standards. Here, you can find information about the results and improvements made after testing the website with Google PageSpeed Insights, HTML Validator, CSS Validator, and BEM Validator.
 
 ### Google PageSpeed Insights
 
